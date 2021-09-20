@@ -2,4 +2,4 @@
 # студент группы ИДБ-18-07 Еремин И.А.
 # Лабораторная 1
 Предложение: продажа билетов в парке аттракционов
-https://github.com/lulu2kan/lulu2kan.github.io/blob/main/lab1/01_A0.png
+https://github.com/lulu2kan/lulu2kan.github.io/blob/main/lab1/01_A0.png?raw=true
