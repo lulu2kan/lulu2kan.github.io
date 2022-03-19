@@ -1,0 +1,82 @@
+@startuml
+skinparam monochrome true
+
+actor Кассир as user
+participant "Клиент 1С:Предприятие 8" as cli
+participant "Сервер 1С:Предприятие 8" as serv
+database "База данных" as base
+
+user -> cli: Оформить билет
+activate cli
+cli -> cli : Cоздать локальный документ
+activate cli  
+cli --> user
+deactivate cli  
+deactivate cli
+
+user -> cli: Открыть список посетителей
+activate cli
+cli -> serv: Получить посетителей
+activate serv
+serv -> base: Получить посетителей
+activate base
+base --> serv
+deactivate base
+serv --> cli
+deactivate serv
+cli -> cli: Отобразить список посетителей
+activate cli
+cli --> user
+deactivate cli  
+deactivate cli
+
+user -> cli: Выбрать посетителя
+activate cli
+cli -> cli : Внести id, ФИО, тип посетителя в локальный документ
+activate cli  
+cli --> user
+deactivate cli  
+deactivate cli
+
+user -> cli: Открыть список доступных типов билета
+activate cli
+cli -> serv: Получить тип билета по типу посетителя
+activate serv
+serv -> base: Получить типы билета по типу посетителя
+activate base
+base --> serv
+deactivate base
+serv --> cli
+deactivate serv
+cli -> cli: Отобразить список типов билета
+activate cli
+cli --> user
+deactivate cli  
+deactivate cli
+
+user -> cli: Выбрать тип билета
+activate cli
+cli -> cli: Внести тип билета в локальный документ
+activate cli
+deactivate cli
+cli -> serv: Получить стоимость
+activate serv
+serv -> base: Получить цену
+activate base
+base --> serv
+deactivate base
+serv -> serv: Рассчитать скидку
+activate serv
+deactivate serv
+serv -> serv: Рассчитать стоимость
+activate serv
+serv --> cli  
+deactivate serv
+deactivate serv
+cli -> cli: Внести цену, скидку, стоимость в локальный документ
+activate cli
+deactivate cli
+cli --> user
+deactivate cli
+
+@enduml
