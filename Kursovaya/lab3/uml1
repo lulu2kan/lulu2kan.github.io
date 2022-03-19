@@ -1,0 +1,37 @@
+@startuml
+skinparam monochrome true
+hide circle
+hide methods
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Пользователь_системы"
+actor "Кассир"
+actor "Модуль_кассира" 
+actor "Программный_модуль" 
+
+Модуль_кассира --> Программный_модуль
+
+rectangle Касса {
+usecase case1 as "Оформить билет"
+usecase case2 as "Выбрать посетителя"
+usecase case3 as "Выбрать тип билета"
+usecase case4 as "Рассчитать стоимость билета"
+usecase case5 as "Зарегистрировать посетителя"
+usecase case6 as "Выбрать тип посетителя"
+ Пользователь_системы <-- Кассир
+ Кассир -- case1
+ (case1) .> (case2) : include
+ (case1) .> (case3) : include
+ (case1) .> (case4) : include
+ (case5) .> (case1) : extends
+ (case5) .> (case6) : include
+ case1 -- Модуль_кассира 
+ case2 -- Модуль_кассира
+ case3 -- Модуль_кассира 
+ case4 -- Модуль_кассира
+ case5 -- Модуль_кассира 
+ case6 -- Модуль_кассира 
+}
+
+@enduml
