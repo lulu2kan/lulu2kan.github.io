@@ -1,0 +1,22 @@
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle uml2
+
+component "Work Station" {
+   component "Platform Windows" {
+      [Автоматизированная система парка аттракционов для кассира] - [Server Workstation Windows]
+}
+}
+component "Сервер 1С:Предприятия 8" as 1c {
+   component "Server Workstation Windows" {
+   [Сервер парка аттракционов] - [Workstation on Windows]
+}
+}
+component "Сервер БД" {
+   component "Workstation on Windows" {
+      [Сервер PostgreSQL]
+}
+}
+
+
+@enduml
