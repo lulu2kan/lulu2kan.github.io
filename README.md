@@ -22,7 +22,7 @@
 2. Обработка текстового запроса.
 3. И иные необходимые функции в зависимости от потребностей заказчика.
 
-[Git-репозиторий проекта] (https://github.com/lulu2kan/Megalul)
+[Git-репозиторий проекта](https://github.com/lulu2kan/Megalul)
 
 Landing Page проекта - [TBD]
 
