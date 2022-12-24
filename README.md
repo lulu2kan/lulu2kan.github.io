@@ -40,6 +40,7 @@ Landing Page проекта - [TBD]
 Ответ на экзаменационный билет:
 
 [Билет №1](https://github.com/stankin/inet-2022/wiki/exam01)
+
 [Compare revisions](https://github.com/stankin/inet-2022/wiki/exam01/_compare/bba7da934038ab1eb28c960419081259bfdb75d8...e05e949135348a5c27947fd7eee493394565905f)
 
 ## Бакалавриат - архив
