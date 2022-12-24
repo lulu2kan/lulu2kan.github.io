@@ -35,6 +35,13 @@ Landing Page проекта - [TBD]
 
 [Отчет](https://docs.google.com/document/d/1caqfV8wfF1Q10t4vSO-bQVSbTuFQf8Y1E9HIQ_iqWUo/edit?usp=sharing)
 
+## Экзаменационный билет 1
+
+Ответ на экзаменационный билет:
+
+[Билет №1](https://github.com/stankin/inet-2022/wiki/exam01)
+[Compare revisions](https://github.com/stankin/inet-2022/wiki/exam01/_compare/bba7da934038ab1eb28c960419081259bfdb75d8...e05e949135348a5c27947fd7eee493394565905f)
+
 ## Бакалавриат - архив
 
 [Курсовой проект](https://github.com/lulu2kan/lulu2kan.github.io/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0)
